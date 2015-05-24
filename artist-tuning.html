@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tune Bot Drum Tuner</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"> <img src="img/toplogo.png"/> </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Product<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="product.html">Tune-bot</a>
+                            </li>
+                            <li>
+                                <a href="buy.html">Buy</a>
+                            </li>
+                            <li>
+                                <a href="video.html">Videos</a>
+                            </li>
+                        </ul>
+                    </li>
+                   <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">How To Use <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="instruction.html">Instructions</a>
+                            </li>
+                            <li>
+                                <a href="video.html">Videos</a>
+                            </li>
+                            <li>
+                                <a href="tuning-guide.html">Tuning Guide</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Free Tuning Resources <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="tuning-guide.html">Tuning Guide</a>
+                            </li>
+                            <li>
+                                <a href="calculator.html">Tuning Calculator</a>
+                            </li>
+                            <li>
+                                <a href="artist-tuning.html">Artist Tunings</a>
+                            </li>
+                            <li>
+                                <a href="video.html">Videos</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+
+
+    <!-- Page Content -->
+    <div class="main-content">
+    <div class="container main-margin">
+  <!-- Page Content -->
+  <div class="page-header">
+  <h1>Artists</h1>
+  </div>
+
+<div class="row">
+  <div class="col-sm-4"><img border="0" src="img/artistsadjusted/markschulmanA.jpg" width="230" height="280"> </div>
+  <div class="col-sm-8"><h3>Mark Schulman - Pink / Sessions</h3><p>"When I was a kid, I would have given a lot to know exactly how my drumming idols tuned their drums...now it is possible!  With Tune-bot, you not only can learn the exact- I mean exact tuning combinations of your idols but you can re-create your favorite personal drum sound to the most minute detail with this digital tuning device for drums.  My drum tech, Pel and I really love this ground breaking device because while I'm out on tour with P!NK, Pel can make every drum sound exactly that way we love it every night with the extensive memorized tunings stored in the Tune-bot.  Trust me; this device really is all THAT!"</p>
+  <button class ="btn btn-primary" onClick ="toggleTable('schulman')">Click To View Tunings</button>
+  <table id="schulman" class ='table artist-table' style="display:none" >
+    <tr>
+  <th>DRUM</th>
+  <th>FUNDAMENTAL FREQUENCY</th>
+  <th>TOP LUG FREQUENCY</th>
+  <th>BOTTOM LUG FREQUENCY</th>
+  </tr>
+   <tr>
+  <th>14" bell brass snare</th>
+  <th>209 Hz</th>
+  <th>328 Hz</th>
+  <th>394 Hz</th>
+  </tr>
+  <tr>
+  <th>12" Tom</th>
+  <th>124 Hz</th>
+  <th>208 Hz</th>
+  <th>220 Hz</th>
+  </tr>
+  <tr>
+  <th>13" Tom</th>
+  <th>114 Hz</th>
+  <th>186 Hz</th>
+  <th>206 Hz</th>
+  </tr>
+  <tr>
+  <th>16" Tom</th>
+  <th>65 Hz</th>
+  <th>108 Hz</th>
+  <th>115 Hz</th>
+  </tr>
+  <tr>
+  <th>22" Bass</th>
+  <th>42 Hz</th>
+  <th>70 Hz</th>
+  <th>75 Hz</th>
+  </tr>
+  </table>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-4"><img border="0" src="img/artistsadjusted/richredmonda.jpg" width="230" height="280"> </div>
+  <div class="col-sm-8"><h3>Rich Redmond - Jason Aldean / Sessions</h3><p>"I'm having great success with the Tune-Bot. It's a very powerful tool that packs a lot of punch for the price. I've been using it on the road and in sessions. I especially like the fact that for studio applications, I can tune my snare and toms to specific resonant notes for the key of the song we are tracking. It will make your snare pop and your toms sing and sit right in the mix. I recommend it immensely!"</p>
+  <button class ="btn btn-primary" onClick ="toggleTable('redmond')">Click To View Tunings</button>
+  <table id="redmond" class ='table artist-table' style="display:none" >
+    <tr>
+ <th>DRUM</th>
+ <th>FUNDAMENTAL FREQUENCY</th>
+ <th>TOP LUG FREQUENCY</th>
+ <th>BOTTOM LUG FREQUENCY</th>
+ </tr>
+  <tr>
+ <th>14" Snare</th>
+ <th>205 Hz</th>
+ <th>332 Hz</th>
+ <th>342 Hz</th>
+ </tr>
+ <tr>
+ <th>12" Tom</th>
+ <th>115 Hz</th>
+ <th>125 Hz</th>
+ <th>308 Hz</th>
+ </tr>
+ <tr>
+ <th>16" Tom</th>
+ <th>76 Hz</th>
+ <th>105 Hz</th>
+ <th>178 Hz</th>
+ </tr>
+ <tr>
+ <th>18" Tom</th>
+ <th>65 Hz</th>
+ <th>80 Hz</th>
+ <th>136 Hz</th>
+ </tr>
+ <tr>
+ <th>24" Kick</th>
+ <th>33 Hz</th>
+ <th>60 Hz</th>
+ <th>65 Hz</th>
+ </tr>
+  </table></div>
+</div>
+<div class="row">
+  <div class="col-sm-4"><img border="0" src="img/artistsadjusted/KrisMazzarisiA.jpg" width="230" height="280"> </div>
+  <div class="col-sm-8"><h3>Kris Mazzarisi - LMFAO</h3><p>"Tune-Bot is the best way to keep my drums sounding and feeling consistent. Lug pitch matching keeps the drum balanced and singing to it's full potential. The large super clear screen, ability to save tuning preferences, quick response, easy to use and precise accuracy is just some of the reasons it belongs in any drummers or techs toolbox.  It's a must have for any touring drummer especially for fly date backline kits."</p>
+  <button class ="btn btn-primary" onClick ="toggleTable('mazzasari')">Click To View Tunings</button>
+  <table id="mazzasari" class ='table artist-table' style="display:none" >
+    <tr>
+ <th>DRUM</th>
+ <th>FUNDAMENTAL FREQUENCY</th>
+ <th>TOP LUG FREQUENCY</th>
+ <th>BOTTOM LUG FREQUENCY</th>
+ </tr>
+  <tr>
+ <th>14" Snare</th>
+ <th>183 Hz</th>
+ <th>266 Hz</th>
+ <th>364 Hz</th>
+ </tr>
+ <tr>
+ <th>12" Tom</th>
+ <th>105 Hz</th>
+ <th>162 Hz</th>
+ <th>182 Hz</th>
+ </tr>
+ <tr>
+ <th>16" Tom</th>
+ <th>64 Hz</th>
+ <th>71 Hz</th>
+ <th>161 Hz</th>
+ </tr>
+ <tr>
+ <th>22" Kick</th>
+ <th>34 Hz</th>
+ <th>66 Hz</th>
+ <th>69 Hz</th>
+ </tr>
+  </table></div>
+</div>
+<div class="row">
+  <div class="col-sm-4"><img border="0" src="img/artistsadjusted/tommyrickardA.jpg" width="230" height="280"> </div>
+  <div class="col-sm-8"><h3>Tommy Rickard - Sessions / Scott Weiland / Educator </h3><p>Originally from San Francisco, CA, Tommy Rickard is an accomplished drummer, educator, and clinician who's credits include work in all styles of music. This includes performances with Linda Perry, Courtney Love, Sugar Hill Gang, Naughty by Nature, as well as a wide variety of singers, songwriters, and producers. Tommy continues performing today in a wide range of styles that include working with Scott Weiland, Devin Powers, and Vain.</p>
+  <button class ="btn btn-primary" onClick ="toggleTable('rickard')">Click To View Tunings</button>
+  <table id="rickard" class ='table artist-table' style="display:none" >
+    <tr>
+  <th>DRUM</th>
+  <th>FUNDAMENTAL FREQUENCY</th>
+  <th>TOP LUG FREQUENCY</th>
+  <th>BOTTOM LUG FREQUENCY</th>
+  </tr>
+   <tr>
+  <th>14" bell brass snare</th>
+  <th>209 Hz</th>
+  <th>328 Hz</th>
+  <th>394 Hz</th>
+  </tr>
+  <tr>
+  <th>12" Tom</th>
+  <th>124 Hz</th>
+  <th>208 Hz</th>
+  <th>220 Hz</th>
+  </tr>
+  <tr>
+  <th>13" Tom</th>
+  <th>114 Hz</th>
+  <th>186 Hz</th>
+  <th>206 Hz</th>
+  </tr>
+  <tr>
+  <th>16" Tom</th>
+  <th>65 Hz</th>
+  <th>108 Hz</th>
+  <th>115 Hz</th>
+  </tr>
+  <tr>
+  <th>22" Bass</th>
+  <th>42 Hz</th>
+  <th>70 Hz</th>
+  <th>75 Hz</th>
+  </tr>
+  </table></div>
+</div>
+<div class="row">
+  <div class="col-sm-4"><img border="0" src="img/artistsadjusted/jasonbittnerA.jpg" width="230" height="280"> </div>
+  <div class="col-sm-8"><h3>Jason Bittner - Shadows Fall</h3><p>Jason Bittner is the Grammy-nominated drummer for the American metal band Shadows Fall. He has won numerous awards including the Modern Drummer Magazine reader poll for #1 Up and Coming Drummer of 2004, and in 2005, #1 Best Recorded Performance for the Shadows Fall album The War Within, #1 Metal drummer (2005/2006) #2 Clinician DRUM! magazine 2011. He is recognized for his tight playing, extensive skill with double bass drumming, particularly his ability to play complex patterns at high speeds, and his familiarity with numerous styles of drumming, including latin and jazz.</p>
+  <button class ="btn btn-primary" onClick ="toggleTable('bittner')">Click To View Tunings</button>
+  <table id="bittner" class ='table artist-table' style="display:none" >
+    <tr>
+ <th>DRUM</th>
+ <th>FUNDAMENTAL FREQUENCY</th>
+ <th>TOP LUG FREQUENCY</th>
+ <th>BOTTOM LUG FREQUENCY</th>
+ </tr>
+  <tr>
+ <th>14" Snare</th>
+ <th>209 Hz</th>
+ <th>291 Hz</th>
+ <th>444 Hz</th>
+ </tr>
+ <tr>
+ <th>10" Tom</th>
+ <th>139 Hz</th>
+ <th>220 Hz</th>
+ <th>260 Hz</th>
+ </tr>
+ <tr>
+ <th>12" Tom</th>
+ <th>109 Hz</th>
+ <th>170 Hz</th>
+ <th>207 Hz</th>
+ </tr>
+ <tr>
+ <th>14" Tom</th>
+ <th>81 Hz</th>
+ <th>153 Hz</th>
+ <th>127 Hz</th>
+ </tr>
+ <tr>
+ <th>16" Tom</th>
+ <th>64 Hz</th>
+ <th>118 Hz</th>
+ <th>103 Hz</th>
+ </tr>
+ <tr>
+ <th>22" Kick</th>
+ <th>56 Hz</th>
+ <th>92 Hz</th>
+ <th>92 Hz</th>
+ </tr>
+  </table></div>
+</div>
+<div class="row">
+  <div class="col-sm-4"><img border="0" src="img/artistsadjusted/arejayhale.jpg" width="230" height="280"> </div>
+  <div class="col-sm-8"><h3>Arejay Hale - Halestorm</h3><p></p>
+  <button class ="btn btn-primary" onClick ="toggleTable('hale')">Click To View Tunings</button>
+  <table id="hale" class ='table artist-table' style="display:none" >
+    <tr>
+ <th>DRUM</th>
+ <th>FUNDAMENTAL FREQUENCY</th>
+ <th>TOP LUG FREQUENCY</th>
+ <th>BOTTOM LUG FREQUENCY</th>
+ </tr>
+ <tr>
+ <th>14" snare</th>
+ <th>176 Hz</th>
+ <th>261 Hz</th>
+ <th>349 Hz</th>
+ </tr>
+ <tr>
+ <th>12" Tom</th>
+ <th>208 Hz</th>
+ <th>320 Hz</th>
+ <th>362 Hz</th>
+ </tr>
+ <tr>
+ <th>14" Tom</th>
+ <th>83 Hz</th>
+ <th>163 Hz</th>
+ <th>174 Hz</th>
+ </tr>
+ <tr>
+ <th>16" Tom</th>
+ <th>60 hz</th>
+ <th>130 Hz</th>
+ <th>138 Hz</th>
+ </tr>
+ <tr>
+ <th>18" Tom</th>
+ <th>56 Hz</th>
+ <th>97 Hz</th>
+ <th>103 Hz</th>
+ </tr>
+ <tr>
+ <th>24" Kick</th>
+ <th>33 Hz</th>
+ <th>60 Hz</th>
+ <th>65 Hz</th>
+ </tr>
+  </table></div>
+</div>
+<div class="row">
+  <div class="col-sm-4"><img border="0" src="img/artistsadjusted/morganrose.jpg" width="230" height="280"> </div>
+  <div class="col-sm-8"><h3>Morgan Rose - Sevendust</h3><p></p>
+  <button class ="btn btn-primary" onClick ="toggleTable('rose')">Click To View Tunings</button>
+  <table id="rose" class ='table artist-table' style="display:none" >
+    <tr>
+ <th>DRUM</th>
+ <th>FUNDAMENTAL FREQUENCY</th>
+ <th>TOP LUG FREQUENCY</th>
+ <th>BOTTOM LUG FREQUENCY</th>
+ </tr>
+ <tr>
+ <th>14" snare</th>
+ <th>209 Hz</th>
+ <th>291 Hz</th>
+ <th>400 Hz</th>
+ </tr>
+ <tr>
+ <th>14" Auxiliary snare</th>
+ <th>209 Hz</th>
+ <th>280 Hz</th>
+ <th>400 Hz</th>
+ </tr>
+ <tr>
+ <th>10" Tom</th>
+ <th>139 Hz</th>
+ <th>220 Hz</th>
+ <th>260 Hz</th>
+ </tr>
+ <tr>
+ <th>12" Tom</th>
+ <th>109 Hz</th>
+ <th>170 Hz</th>
+ <th>207 Hz</th>
+ </tr>
+ <tr>
+ <th>14" Tom</th>
+ <th>81 Hz</th>
+ <th>153 Hz</th>
+ <th>127 Hz</th>
+ </tr>
+ <tr>
+ <th>16" Tom</th>
+ <th>64 hz</th>
+ <th>118 Hz</th>
+ <th>103 Hz</th>
+ </tr>
+ <tr>
+ <th>18" Tom</th>
+ <th>50 Hz</th>
+ <th>82 Hz</th>
+ <th>87 Hz</th>
+ </tr>
+ <tr>
+ <th>22" Kick</th>
+ <th>56 Hz</th>
+ <th>92 Hz</th>
+ <th>92 Hz</th>
+ </tr>
+  </table></div>
+</div>
+<div class="row">
+  <div class="col-sm-4"><img border="0" src="img/artistsadjusted/natemorton.jpg" width="230" height="280"> </div>
+  <div class="col-sm-8"><h3>Nate Morton - NBC's "The Voice"</h3><p></p>
+  <button class ="btn btn-primary" onClick ="toggleTable('morton')">Click To View Tunings</button>
+  <table id="morton" class ='table artist-table' style="display:none" >
+    <tr>
+ <th>DRUM</th>
+ <th>FUNDAMENTAL FREQUENCY</th>
+ <th>TOP LUG FREQUENCY</th>
+ <th>BOTTOM LUG FREQUENCY</th>
+ </tr>
+  <tr>
+ <th>14" snare</th>
+ <th>195 Hz</th>
+ <th>280 Hz</th>
+ <th>400 Hz</th>
+ </tr>
+ <tr>
+ <th>10" Tom</th>
+ <th>160 Hz</th>
+ <th>275 Hz</th>
+ <th>308 Hz</th>
+ </tr>
+ <tr>
+ <th>12" Tom</th>
+ <th>115 Hz</th>
+ <th>125 Hz</th>
+ <th>308 Hz</th>
+ </tr>
+ <tr>
+ <th>13" Tom</th>
+ <th>114 Hz</th>
+ <th>186 Hz</th>
+ <th>206 Hz</th>
+ </tr>
+ <tr>
+ <th>14" Tom</th>
+ <th>85 Hz</th>
+ <th>125 Hz</th>
+ <th>125 Hz</th>
+ </tr>
+ <tr>
+ <th>16" Tom</th>
+ <th>64 hz</th>
+ <th>110 Hz</th>
+ <th>110 Hz</th>
+ </tr>
+ <tr>
+ <th>18" Tom</th>
+ <th>65 Hz</th>
+ <th>80 Hz</th>
+ <th>136 Hz</th>
+ </tr>
+ <tr>
+ <th>22" Kick</th>
+ <th>47 Hz</th>
+ <th>80 Hz</th>
+ <th>80 Hz</th>
+ </tr>
+  </table></div>
+</div>
+<div class="row">
+  <div class="col-sm-4"><img border="0" src="img/artistsadjusted/stuartpringle.jpg" width="230" height="280"> </div>
+  <div class="col-sm-8"><h3>Stuart Pringle - Independent, The Remedies, Ed Sheeren, Mikill Pane, X Factor UK </h3><p>"As a professional musician I have found the Tune-Bot amazing. I've always tuned my own drums and percussion by ear but found the Tune-Bot gives it that precise edge!
+As a teacher, the 'Bot has aided in my students understanding in tuning and pitch and proved the importance of pedantry. It has improved both my students and my knowledge of pitch (and hertz) and precision. Its tuning is amazingly precise and the memory functions are ingenious and intuitive. That and I've never seen a cooler looking gadget."</p></div>
+</div>
+<div class="row">
+  <div class="col-sm-4"><img border="0" src="img/artistsadjusted/dougmeola.jpg" width="230" height="280"> </div>
+  <div class="col-sm-8"><h3>Doug Meola - Dead City Dolls, Educator, Clinician</h3><p>"The Tune-bot is hands down the most innovative, resourceful and coolest drum tuning devices available to drummers, it affords me the ability to tune my drums to finite digital precision in any live or studio situation in a fraction of the time it previously took. Having the ability to experiment with various and new tuning options based on the proven science of the Tune-bot opens up a whole new world of sound possibilities for drummers. I am truly impressed with all of the great features that are packed into the Tune-bot, I especially love that it affords me the ability to have all of my perfect tuning settings saved for my whole kit and that they are so conveniently available and accessible, it's like having a drum tech in my stick bag at all times."</p>
+  <button class ="btn btn-primary" onClick ="toggleTable('meola')">Click To View Tunings</button>
+  <table id="meola" class ='table artist-table' style="display:none" >
+    <tr>
+ <th>DRUM</th>
+ <th>FUNDAMENTAL FREQUENCY</th>
+ <th>TOP LUG FREQUENCY</th>
+ <th>BOTTOM LUG FREQUENCY</th>
+ </tr>
+  <tr>
+ <th>14" Snare</th>
+ <th>195 Hz</th>
+ <th>280 Hz</th>
+ <th>400 Hz</th>
+ </tr>
+ <tr>
+ <th>12" Tom</th>
+ <th>A#</th>
+ <th>194 Hz</th>
+ <th>207 Hz</th>
+ </tr>
+ <tr>
+ <th>14" Tom</th>
+ <th>G</th>
+ <th>163 Hz</th>
+ <th>174 Hz</th>
+ </tr>
+ <tr>
+ <th>16" Tom</th>
+ <th>D#</th>
+ <th>130 Hz</th>
+ <th>138 Hz</th>
+ </tr>
+ <tr>
+ <th>18" Tom</th>
+ <th>A#</th>
+ <th>97 Hz</th>
+ <th>103 Hz</th>
+ </tr>
+ <tr>
+ <th>24" Kick</th>
+ <th>33 Hz</th>
+ <th>60 Hz</th>
+ <th>65 Hz</th>
+ </tr>
+  </table></div>
+</div>
+<div class="row">
+  <div class="col-sm-4"><img border="0" src="img/artistsadjusted/philparisA.jpg" width="230" height="280"> </div>
+  <div class="col-sm-8"><h3>Phil Paris - Independent / Sessions</h3><p>"I TESTED THE TUNE-BOT ON TOUR AND IN STUDIO, AND MY CONCLUSION IS THE
+FOLLOWING: COULDN'T LIVE WITHOUT IT ANYMORE!"</p></div>
+</div>
+<div class="row">
+  <div class="col-sm-4"><img border="0" src="img/artistsadjusted/Robin_Goodridge.jpg" width="230" height="280"> </div>
+  <div class="col-sm-8"><h3>Robin Goodridge - Bush</h3><p>Robin is one of the original members of Bush. He has also been a part of several other notable acts such as The Beautiful People and Stone Gods. In 2010 Robin returned to be part of the new Bush lineup along with Gavin Rossdale.</p>
+  <button class ="btn btn-primary" onClick ="toggleTable('goodridge')">Click To View Tunings</button>
+  <table id="goodridge" class ='table artist-table' style="display:none" >
+  <tr>
+  <th>Snare</th>
+  <th>174 Hz</th>
+  <th>250 Hz Top</th>
+  <th>360 Hz</th>
+  </tr>
+  <tr>
+  <th>12" Tom</th>
+  <th>111 Hz</th>
+  <th>185 Hz</th>
+  <th>196 Hz</th>
+  </tr>
+  <tr>
+  <th>16" Tom</th>
+  <th>65 Hz</th>
+  <th>100 Hz</th>
+  <th>124 Hz</th>
+  </tr>
+  <tr>
+  <th>18" Tom</th>
+  <th>56 Hz</th>
+  <th>84 Hz</th>
+  <th>110 Hz</th>
+  </tr>
+  </table></div>
+</div>
+<div class="row">
+  <div class="col-sm-4"><img border="0" src="img/artistsadjusted/deeppocketA.jpg" width="230" height="280"> </div>
+  <div class="col-sm-8"><h3>Daryll "Deep Pocket" Whitlow</h3><p>"If you've spent years searching for that perfect sound, if you've spent hours in a studio booth searching for that perfect tone, if you've rushed at sound check to get that perfect tuning, your search is over for the perfect tuner. Try Tune-Bot tuner, the perfect tuner!!!"</p>
+<p>"I use DW drums, as you know the shells are matched according to pitch. I have programmed my Tune-Bot according to the pitch stamped inside each shell. So, when I put new heads on the drums, I don't have to waste time trying to find the right tuning. And as I tighten the head, the Tune-Bot is already set to tell me if the pitch is up or down, no time wasted" </p></div>
+</div>
+<div class="row">
+  <div class="col-sm-4"><img border="0" src="img/artistsadjusted/sergiobellotti.jpg" width="230" height="280"> </div>
+  <div class="col-sm-8"><h3>Sergio Bellotti - Educator and Sessions</h3><p>Sergio Bellotti moved from the south of Italy to the USA in 1995. Very active in the music scene of Boston first and as a worldwide clinician/performer, Sergio has recorded and/or shared the stage with Mike Stern, Wayne Krantz, Tom Scott, Bob James, Robben Ford, Rocco Ventrella, RobbenFord,Nathan East,James Montgomery and Dan Siegel among others.</p><p>As a session studio musician he has been very active in the contemporary Jazz scene providing tracks for Gio Lombardi, Rocco Ventrella, Jas Miller as well as rapper Pula+ and many more</p></div>
+</div>
+<div class="row">
+  <div class="col-sm-4"><img border="0" src="img/artistsadjusted/skiphadden.jpg" width="230" height="280"> </div>
+  <div class="col-sm-8"><h3>Skip Hadden - Educator and Sessions</h3><p>Skip has a Masters in Education and is a Professor of Percussion at Berklee College of Music in Boston, MA where he has taught since 1982. At Berklee he has developed and taught numerous courses, including Fusion Repertoire and Development, Advanced Fusion, Basic Time and Pulse, Lead Sheet Interpretation, Rhythmic Concepts: Broken Eighth Note Feel, Linear Time Feels and Phrasing, Jazz Drum Styles, Fusion Drum Styles, Funk Drum Styles, Rock Drum Styles, World Drum Styles, Survey of Drumming post '60s and Acoustic Characteristics of the Drumset.</p><p>He can be heard on the Weather Report album "Mysterious Traveler" with Josef Zawinul, Wayne Shorter, Alphonso Johnson, Dom Um Ramao, and Ishmael Wilburn. He can also be heard on "This Is Jazz 10, Weather Report," and the recent recording "Reverence" with Michael Bocian, Dewey Redman, and Cameron Brown on the ENJA label.</p>
+  <button class ="btn btn-primary" onClick ="toggleTable('hadden')">Click To View Tunings</button>
+  <table id="hadden" class ='table artist-table' style="display:none" >
+    <tr>
+ <th>DRUM</th>
+
+ <th>TOP LUG FREQUENCY</th>
+ <th>BOTTOM LUG FREQUENCY</th>
+ </tr>
+  <tr>
+ <th>8" tom</th>
+
+ <th>392 Hz</th>
+ <th>400+ Hz</th>
+ </tr>
+ <tr>
+ <th>10" Tom</th>
+
+ <th>262 Hz</th>
+ <th>349 Hz</th>
+ </tr>
+ <tr>
+ <th>12" Tom</th>
+
+ <th>175 Hz</th>
+ <th>247 Hz</th>
+ </tr>
+ <tr>
+ <th>13" Tom</th>
+
+ <th>124 Hz</th>
+ <th>165 Hz</th>
+ </tr>
+ <tr>
+ <th>18" Kick</th>
+
+ <th>62 Hz</th>
+ <th>81 Hz</th>
+ </tr>
+  </table></div>
+</div>
+<div class="row">
+  <div class="col-sm-4"><img border="0" src="img/artistsadjusted/rodrigorecabarrenA.jpg" width="230" height="280"> </div>
+  <div class="col-sm-8"><h3>Rodrigo Recabarren - Drummer and Educator</h3><p>"I have been using tune bot for more than 2 years now and has become a definitive part of my gear. I have tried it in the studio and on tour and have transformed what used to be the the hardest part of the setup into the easiest. No matter the drums or heads, you can trust tune-bot to help you reach a great sound in almost no time in any setting."</br>Originally from Santiago de Chile, Rodrigo is one of the most active and prolific Chilean drummers. Since moving to New York City in 2009, he has embarked on the search for a personal sound on the drum set and the demand for his services has grown rapidly and constantly in the Jazz world. Rodrigo holds a MM in Jazz performance from New York University and has performed with artists such as Wayne Krantz, Chris Potter, Brad Shepik and John Ellis among many others. He has performed in the US, Latin America, Europe and Japan and since 2013 is a Zildjian endorsed artist.</p>
+  <button class ="btn btn-primary" onClick ="toggleTable('recabarren')">Click To View Tunings</button>
+  <table id="recabarren" class ='table artist-table' style="display:none" >
+    <tr>
+<th>DRUM</th>
+<th>FUNDAMENTAL FREQUENCY</th>
+<th>TOP LUG FREQUENCY</th>
+<th>BOTTOM LUG FREQUENCY</th>
+</tr>
+ <tr>
+<th>14 x 5.5" Snare</th>
+<th>216 Hz</th>
+<th>297 Hz</th>
+<th>400 Hz</th>
+</tr>
+<tr>
+<th>12 x 8" Tom</th>
+<th>151 Hz</th>
+<th>252 Hz</th>
+<th>272 Hz</th>
+</tr>
+<tr>
+<th>14 x 14" Tom</th>
+<th>104 Hz</th>
+<th>147 Hz</th>
+<th>218 Hz</th>
+</tr>
+<tr>
+<th>18 x 14" Kick</th>
+<th>73 Hz</th>
+<th>113 Hz</th>
+<th>153 Hz</th>
+</tr>
+  </table></div>
+</div>
+<div class="row">
+  <div class="col-sm-4"><img border="0" src="img/artistsadjusted/stevechen.jpg" width="230" height="280"> </div>
+  <div class="col-sm-8"><h3>Steve Chen - Surefire</h3><p>"Tune-bot has become an invaluable tool for me as both a drummer and a producer. Not only does it help me tune any drum I use to perfection, but it helps me to mix my drums with great accuracy and efficiency! I am proud to join the Tune-bot family of artists."</p>
+  <button class ="btn btn-primary" onClick ="toggleTable('chen')">Click To View Tunings</button>
+  <table id="chen" class ='table artist-table' style="display:none" >
+    <tr>
+<th>DRUM</th>
+<th>FUNDAMENTAL FREQUENCY</th>
+<th>TOP LUG FREQUENCY</th>
+<th>BOTTOM LUG FREQUENCY</th>
+</tr>
+<tr>
+<th>13" Snare</th>
+<th>193 Hz</th>
+<th>289 Hz</th>
+<th>400 Hz</th>
+</tr>
+<tr>
+<th>10" Tom</th>
+<th>120 Hz</th>
+<th>188 Hz</th>
+<th>200 Hz</th>
+</tr>
+<tr>
+<th>14" Tom</th>
+<th>71 Hz</th>
+<th>117 Hz</th>
+<th>125 Hz</th>
+</tr>
+<tr>
+<th>20" Kick</th>
+<th>45 Hz</th>
+<th>76 Hz</th>
+<th>84 Hz</th>
+</tr>
+  </table></div>
+</div>
+<div class="row">
+  <div class="col-sm-4"><img border="0" src="img/artistsadjusted/chicagosteveA.jpg" width="230" height="280"> </div>
+  <div class="col-sm-8"><h3>Chicago Steve - Independent / Sessions / Songwriter</h3><p>"Chicago" Steve is a highly sought after Touring, Studio, First Call Pro Drummer. "Chicago" Steve over the years have toured and performed with members of James Brown, Jackie Wilson. David Cassidy, Sheena Easton, Charo, Muddy Waters, J.Geils Band, Maynard Ferguson, Boston, Steve Miller, Gin Blossoms, Tower of Power, The Coasters, The Monkees, Johnny A, B-52's, John Butcher, Ayla Brown, James Darren, Van Morrison, Dave Mathews, and many more. Playing drums since  the age of 10, Steve had his first professional gig at the age of 14. Some of his influences are Neil Peart, Steve Gadd, Buddy Rich, and Dave Garibaldi,
+</p><p>" Since the first time I used the Tune-Bot I was blown away. Its the only true way of tuning your drums. This is a must have for every drummer!"</p></div>
+</div>
+<div class="row">
+  <div class="col-sm-4"><img border="0" src="img/artistsadjusted/deastA.jpg" width="230" height="280"> </div>
+  <div class="col-sm-8"><h3>Daniel East</h3><p>"Even though I tune my kit by ear, it can be a challenge to get the exact same tuning for sessions over time, or to swop out heads fast on stage. I set it up once and I have my entire kit saved so my tuned sound is always pitch-correct. Tune-Bot is the coolest, fastest, most consistently accurate way to help your ears tune the kit every time."</p></div>
+</div>
+<div class="row">
+  <div class="col-sm-4"><img border="0" src="img/artistsadjusted/yoronisraelA.jpg" width="230" height="280"> </div>
+  <div class="col-sm-8"><h3>YORON ISRAEL - Drummer, Percussionist, Band Leader, Educator, Author and Composer</h3><p>Yoron Israel, a native Chicagoan, is one of the most gifted and sought after musicians in the music industry today. Yoron's exciting and tasteful drumming, along with his compositional talents are spotlighted throughout his recordings; "VISIONS" - The Music of Stevie Wonder (Ronja Music), "Basic Traneing" (Ronja Music), "Chicago" (Double Time), "Live at the Blue Note" (Half Note) and "A Gift for You" (Ronja Music). He brings his unique influences and experiences in Jazz, World Styles, Gospel, Contemporary Christian, Funk, R & B and Orchestral idioms full circle with his compositions, arrangements, repertoire and ensemble concept: "Music to be enjoyed by all".</p></div>
+</div>
+<div class="row">
+  <div class="col-sm-4"><img border="0" src="img/artistsadjusted/khookA.jpg" width="230" height="280"> </div>
+  <div class="col-sm-8"><h3>Kimball "KHook" Hooker</h3><p>"The Tune-Bot has added a new quick and effective way of drum tuning.  It's Like my credit card, I don't leave home without it and it's a MUST have in your drum arsenal! I use it before all sessions work, rehearsals and shows. I can tune to notes and SAVE TIME! I recommend this to ALL drummers no matter what level of expertise you are."</p></div>
+</div>
+<div class="row">
+  <div class="col-sm-4"><img border="0" src="img/artistsadjusted/buraksirinA.jpg" width="230" height="280"> </div>
+  <div class="col-sm-8"><h3>Burak Sirin</h3><p>Burak is an up and coming session drummer hailing from Turkey. When he is on tour or in the studio, he uses the tune-bot to get his set sounding just right. He is also endorsed by Liberty Drums, Istanbul cymbals, and Kickport.</p></div>
+</div>
+
+
+
+  <!-- closing container and main content dont delete -->
+    </div>
+    </div>
+    <!-- /.footer -->
+    <div class="custom-footer">
+        <div class="container">
+
+
+
+          <div class="col-sm-3">
+          <h3>Social</h3>
+          <hr>
+          <a href= "https://www.facebook.com/pages/Overtone-Labs/233100610086495?sk=wall"><img src="img/facebook.png"/></a>
+          <a href= "https://twitter.com/tunebotdrum"><img src="img/twitter.png"/></a>
+          <a href= "https://www.youtube.com/user/Mremilioish"><img src="img/youtube.png"/></a>
+          <a href= "https://soundcloud.com/overtone-labs"><img src="img/soundcloud.png"/></a>
+
+          </div>
+          <div class="col-sm-3">
+          <h3>Contact</h3>
+          <hr>
+          <p>Overtone Labs</br>
+          60 Island St.</br>
+          Lawrence, MA 01810</br>
+          978.682.1257</p>
+          </div>
+          <div class="col-sm-3">
+          <h3>Tuning Resources</h3>
+          <hr>
+          <a href="artist-tuning.html">Tune-bot Artists</a></br>
+          <a href="video.html">Videos</a></br>
+          <a href="calculator.html">Tuning Calculator</a></br>
+          </div>
+          <div class="col-sm-3">
+          <h3>Tuning Info</h3>
+          <hr>
+          <a href="tuning-guide.html">Tuning Guide</a></br>
+          <a href="instruction.html">Quick Start Guide</a></br>
+          <a href="calculator.html">Tuning Calculator</a></br>
+          </div>
+
+
+        </div>
+        </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <script src="js/artist.js">
+    </script>
+
+  <script type= "text/javaScript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25419902-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</body>
+
+</html>

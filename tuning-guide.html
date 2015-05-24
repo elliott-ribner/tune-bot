@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tune Bot Drum Tuner</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"> <img src="img/toplogo.png"/> </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Product<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="product.html">Tune-bot</a>
+                            </li>
+                            <li>
+                                <a href="buy.html">Buy</a>
+                            </li>
+                            <li>
+                                <a href="video.html">Videos</a>
+                            </li>
+                        </ul>
+                    </li>
+                   <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">How To Use <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="instruction.html">Instructions</a>
+                            </li>
+                            <li>
+                                <a href="video.html">Videos</a>
+                            </li>
+                            <li>
+                                <a href="tuning-guide.html">Tuning Guide</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Free Tuning Resources <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="tuning-guide.html">Tuning Guide</a>
+                            </li>
+                            <li>
+                                <a href="calculator.html">Tuning Calculator</a>
+                            </li>
+                            <li>
+                                <a href="artist-tuning.html">Artist Tunings</a>
+                            </li>
+                            <li>
+                                <a href="video.html">Videos</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+
+
+    <!-- Page Content -->
+    <div class="main-content">
+    <div class="container main-margin">
+  <!-- Page Content -->
+  <div class="page-header">
+  <h1>Tuning Guide</h1>
+  </div>
+
+  <p>Tune-Bot enables you to accurately tune your drums to specific notes or frequencies and once you know the notes or frequencies you want, you can quickly tune and retune your drums. This tuning guide will help you determine the notes and frequencies to use for your specific drum-set.  Then you can use tune-bot to tune your set to those specific values. After you've tuned your set to your liking you can also store the pitches of all your drums in tune-bot to allow you to quickly retune to the same sound over and over again.</p>
+  <h2>Tom Tuning</h2>
+  <p>A good way to tune your toms and your snare as well, is to use notes in musical intervals or chords for the fundamental pitches of the drums. One consideration, in selecting which interval or chord to use for tuning, is the number of toms (and optionally snare) in your set. If you have a small number of drums you might prefer larger intervals between drums whereas with a large number of drums you might be better with smaller intervals, otherwise, you might span too small or too large a range of pitches with your drums.</p>
+  <h2>Summary of Tuning Steps</h2>
+  <ul>
+  <li><strong>1.</strong> Choose the fundamental notes for every drum using Table 1. </li>
+  <li><strong>2.</strong> Decide on the amount of Resonance: low, medium, high or maximum and if top or bottom head is higher in lug-frequency. </li>
+  <li><strong>3.</strong> Calculate the top and bottom head lug-frequency for every drum head.</li>
+</ul>
+  <p>For each drum:</p>
+  <ul>
+  <li><strong>1. </strong>Tune top and bottom heads to required lug-frequency..</li>
+  <li><strong>2. </strong>Equalize top and bottom heads.</li>
+  <li><strong>*note: </strong>These formulas may not be exact. Depending on your drum's dimensions you may have to fine tune the lug pitches to get the desired fundamental note. These formulas will however get you very close!</li>
+</ul>
+  <h2>Details of Tuning Steps</h2>
+  <h3>Fundamental Note Selection</h3>
+  <p>Suggested tunings for a variety of drum set configurations ranging from 2 to 6 toms are listed in the following table. The table also covers most popular tom sizes ranging from 8 to 16 inches in diameter. All the notes in any of these tunings can be moved up or down a few semi-tones (the distance between A and A#; a half-step) to suit individual tastes without changing the intervals. Only the fundamental pitch of the drum, i.e., the lowest pitch of the drum (obtained when the drum is hit in the center and is mounted on a stand), is listed in the chart, not the lug-pitches. You will get the same fundamental pitch whether you hit the top or bottom head since the top and bottom heads vibrate in unison when the drum is hit in the center. The corresponding top and bottom head lug-pitches, however, are independent of each other and can be 1.2 to 2.3 times higher than the fundamental pitch for typical drum sizes.</p>
+<div class="panel panel-default">
+<div class="panel-heading">Table 1. Recommended Fundamental Notes and Frequencies for Various Tom Configurations.</div>
+<table class="table">
+<tr>
+<th><strong> NUMBER OF TOMS and<br />TOM SIZES </strong></th>
+<th><strong>2</strong></th>
+<th><strong>2</strong></th>
+<th><strong>3</strong></th>
+<th><strong>3</strong></th>
+<th><strong>3</strong></th>
+<th><strong>3</strong></th>
+<th><strong>4</strong></th>
+<th><strong>4</strong></th>
+<th><strong>5</strong></th>
+<th><strong>6</strong></th>
+</tr>
+<tr>
+<th><strong>8"</strong></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th>3E <br />165 Hz</th>
+<th>  3G# <br />208 Hz
+</th>
+</tr>
+<tr>
+<th><strong>10"</strong></th>
+<th>3C <br />131 Hz</th>
+<th></th>
+<th>3C <br />131 Hz</th>
+<th>3C <br />131 Hz</th>
+<th></th>
+<th></th>
+<th>3D<br />147 Hz</th>
+<th>3E<br />165 Hz</th>
+<th>3C <br />131 Hz</th>
+<th>3E<br />165 Hz</th>
+</tr>
+<tr>
+<th><strong>12"</strong></th>
+<th></th>
+<th>2A<br />110 Hz</th>
+<th>2A<br />110 Hz</th>
+<th>2G<br />98 Hz</th>
+<th>2A<br />110 Hz</th>
+<th>2A<br />110 Hz</th>
+<th>2B<br />124 Hz</th>
+<th>2B<br />124 Hz</th>
+<th>2G#<br />104 Hz</th>
+<th>3C<br />131 Hz</th>
+</tr>
+<tr>
+<th><strong>13"</strong></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th>2F<br />87.3Hz</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th>2G#<br />104 Hz</th>
+</tr>
+<tr>
+<th><strong>14"</strong></th>
+<th>2F<br />87.3 Hz</th>
+<th></th>
+<th>2F<br />87.3 Hz</th>
+<th></th>
+<th></th>
+<th>2F<br />87.3 Hz</th>
+<th>2G<br />98 Hz</th>
+<th>2F#<br />92.5 Hz</th>
+<th>2E<br />82.4 Hz</th>
+<th>2E<br />82.4 Hz</th>
+</tr>
+<tr>
+<th><strong>16"</strong></th>
+<th></th>
+<th>2D<br />73.4 Hz</th>
+<th></th>
+<th>2D<br />73.4 Hz</th>
+<th>2C#<br />69.3 Hz</th>
+<th>2C<br />65.4 Hz</th>
+<th>2D<br />73.4 Hz</th>
+<th>2C#<br />69.3 Hz</th>
+<th>2C<br />65.4 Hz</th>
+<th>2C<br />65.4 Hz</th>
+</tr>
+<tr>
+<th><strong>TYPE OF INTERVAL</strong></th>
+<th>Perfect Fifth</th>
+<th>Perfect Fifth</th>
+<th>Major Chord</th>
+<th>Perfect Fourths</th>
+<th>Major Thirds</th>
+<th>Perfect Fourths</th>
+<th>Call to Post</th>
+<th>Perfect Fourths</th>
+<th>Major Thirds</th>
+<th>Major Thirds</th>
+</tr>
+</table>
+</div>
+
+
+<h3>Resonance and Top or Bottom Head Tuning Options</h3>
+<p>With a two-headed drum, the fundamental pitch of the drum can be varied by adjusting either top or bottom heads so there are an infinite number of top and bottom lug-pitch combinations for any specific fundamental pitch. The resonance (or sustain) of the drum depends on the lug-frequency relationship between the top and bottom heads. After you decide on the amount of drum resonance you want, from low to high, specific top and bottom lug pitches can be easily determined for any desired fundamental pitch.</p>
+<P>Selecting the amount of resonance that is right for you depends on the type of sound you want: maximum resonance and slower decay is obtained with top and bottom lug-pitches tuned to the same pitch; alternatively, lower resonance and quicker decay is obtained from larger differences in top and bottom lug-pitches. For live performance more resonance might be desirable whereas for a recording situation, it might be better to have less resonance and faster decay. Another consideration if the heads are tuned differently is which head is higher in pitch. Again this is a personal choice: typically, a more controlled sound is obtained with the bottom head tuned higher than the top head, a good choice for recording. On the other hand, more attack is attained with the top head tuned to the higher lug-pitch.</P>
+<h3>Calculating the Top and Bottom Lug-Frequencies</h3>
+<p>The following lug-frequency formulas are values for typical drums. The actual values for your drums will depend on the ratio of the drum shell diameter to the depth, the type of drum heads you are using and if the top and bottom heads are the same type.  Use these formulas as a starting point and adjust them to suit your specific drums and heads.</p>
+<br />
+<p><strong>Maximum Resonance:</strong> Tune top and bottom lug pitches to the same pitch. Depending on the specific drum, the lug pitch will be between 1.6 and 1.9 times higher in frequency than the fundamental pitch. To start, multiply the frequency of the desired fundamental note by 1.75 and tune both top and bottom lug-pitches to that frequency. Then, measure the fundamental pitch of the drum and adjust the pitch of top and bottom heads accordingly.</p>
+<div class="panel panel-default">
+<div class="panel-heading">Example 1. Maximum Resonance with 4 Toms: 10", 12", 14" and 16". Both Heads Equal.</div>
+<table class="table">
+<tr>
+<th>TOM SIZE</th>
+<th>FUNDAMENTAL NOTE</th>
+<th>FUNDAMENTAL FREQUENCY</th>
+<th>TOP and BOTTOM LUG FREQUENCY</th>
+</tr>
+<tr>
+<th>10"</th>
+<th>3D</th>
+<th>147 Hz</th>
+<th>257 Hz (= 147 x 1.75)</th>
+</tr>
+<tr>
+<th>12"</th>
+<th>2B</th>
+<th>124 Hz</th>
+<th>217 Hz (= 124 x 1.75)</th>
+</tr>
+<tr>
+<th>14"</th>
+<th>2G</th>
+<th>98 Hz</th>
+<th>172 Hz (= 98 x 1.75)</th>
+</tr>
+<tr>
+<th>16"</th>
+<th>2D</th>
+<th>73.4 Hz</th>
+<th>128 Hz (= 73.4 x 1.75)</th>
+</tr>
+</table>
+</div>
+
+
+<p><strong>High Resonance:</strong> With the bottom head tuned higher, multiply the frequency of the desired fundamental note by 1.85 and tune the bottom head lug-pitch to that frequency. Then tune the top head lug-pitch to about 1.5 times the fundamental frequency. Then, measure the fundamental pitch of the drum and adjust the pitch of the top head until it equals the desired frequency.  For high resonance with the bottom head tuned lower, simply switch the numbers in the two columns.</p>
+<div class="panel panel-default">
+<div class="panel-heading">Example 2. High Resonance with 4 Toms: 10", 12", 14" and 16". Bottom Head Higher.</div>
+<table class="table">
+<tr>
+<th>TOM SIZE</th>
+<th>FUNDAMENTAL NOTE</th>
+<th>FUNDAMENTAL FREQUENCY</th>
+<th>TOP LUG FREQUENCY</th>
+<th>BOTTOM LUG FREQUENCY</th>
+</tr>
+<tr>
+<th>10"</th>
+<th>3D</th>
+<th>147 Hz</th>
+<th>221 Hz (= 147 x 1.5)</th>
+<th>272 Hz (= 147 x 1.85)</th>
+</tr>
+<tr>
+<th>12"</th>
+<th>2B</th>
+<th>124 Hz</th>
+<th>186 Hz (= 124 x 1.5)</th>
+<th>229 Hz (= 124 x 1.85)</th>
+</tr>
+<tr>
+<th>14"</th>
+<th>2G</th>
+<th>98 Hz</th>
+<th>147 Hz (= 98 x 1.5)</th>
+<th>181 Hz (= 98 x 1.85)</th>
+</tr>
+<tr>
+<th>16"</th>
+<th>2D</th>
+<th>73.4 Hz</th>
+<th>110 Hz (=  73.4 x 1.5)</th>
+<th>136 Hz (= 73.4 x 1.85)</th>
+</tr>
+</table>
+</div>
+
+<p><strong>Medium Resonance:</strong> Follow the instructions in the preceding paragraph using 2.0 times and 1.4 times the fundamental frequency instead of 1.85 and 1.5 times.</p>
+<div class="panel panel-default">
+<div class="panel-heading">Example 3. Medium Resonance with 4 Toms: 10", 12", 14" and 16". Bottom Head Higher.</div>
+<table class="table">
+<tr>
+<th>TOM SIZE</th>
+<th>FUNDAMENTAL NOTE</th>
+<th>FUNDAMENTAL FREQUENCY</th>
+<th>TOP LUG FREQUENCY</th>
+<th>BOTTOM LUG FREQUENCY</th>
+</tr>
+<tr>
+<th>10"</th>
+<th>3D</th>
+<th>147 Hz</th>
+<th>206 Hz (= 147 x 1.4)</th>
+<th>294 Hz (= 147 x 2)</th>
+</tr>
+<tr>
+<th>12"</th>
+<th>2B</th>
+<th>124 Hz</th>
+<th>174 Hz (= 124 x 1.4)</th>
+<th>248 Hz (= 124 x 2)</th>
+</tr>
+<tr>
+<th>14"</th>
+<th>2G</th>
+<th>98 Hz</th>
+<th>137 Hz (= 98 x 1.4)</th>
+<th>196 Hz (= 98 x 2)</th>
+</tr>
+<tr>
+<th>16"</th>
+<th>2D</th>
+<th>73.4 Hz</th>
+<th>103 Hz (=  73.4 x 1.4)</th>
+<th>147 Hz (= 73.4 x 2)</th>
+</tr>
+</table>
+</div>
+
+<p><strong>Low Resonance:</strong> Follow the same instructions using 2.3 and 1.2 times the fundamental frequency instead of 1.85 and 1.5 times.</p>
+
+<div class="panel panel-default">
+<div class="panel-heading">Example 4. Low Resonance with 4 Toms: 10", 12", 14" and 16". Bottom Head Higher.</div>
+<table class="table">
+<tr>
+<th>TOM SIZE</th>
+<th>FUNDAMENTAL NOTE</th>
+<th>FUNDAMENTAL FREQUENCY</th>
+<th>TOP LUG FREQUENCY</th>
+<th>BOTTOM LUG FREQUENCY</th>
+</tr>
+<tr>
+<th>10"</th>
+<th>3D</th>
+<th>147 Hz</th>
+<th>176 Hz (= 147 x 1.2)</th>
+<th>338  Hz (= 147 x 2.3)</th>
+</tr>
+<tr>
+<th>12"</th>
+<th>2B</th>
+<th>124 Hz</th>
+<th>149 Hz (= 124 x 1.2)</th>
+<th>285 Hz (= 124 x 2.3)</th>
+</tr>
+<tr>
+<th>14"</th>
+<th>2G</th>
+<th>98 Hz</th>
+<th>118 Hz (= 98 x 1.2)</th>
+<th>225 Hz (= 98 x 2.3)</th>
+</tr>
+<tr>
+<th>16"</th>
+<th>2D</th>
+<th>73.4 Hz</th>
+<th>88 Hz (=  73.4 x 1.2)</th>
+<th>169 Hz (= 73.4 x 2.3)</th>
+</tr>
+</table>
+</div>
+
+<h2>Snare Drum Tuning</h2>
+<p>Most 14" diameter snare drums sound good with a fundamental pitch in the range of 3E to 3A#. Some drummers like to have the fundamental pitch of their snare in the same interval relationship as their toms while others like to set it independently; it's really a matter of personal preference.</p>
+<p>A good pitch relationship for the drum heads is to tune the lug pitch of the bottom head a perfect fifth higher than the top head (1.5 times higher in frequency, see Appendix).  This combination works well for a couple of reasons: a higher-pitch resonant head helps minimize snare buzz and a lower-pitch batter head avoids choking the drum. When tuning to higher fundamental pitches, eg., above 3G, It's a good idea to keep the resonant head from exceeding a lug-frequency of 400 Hz, to avoid stretching or choking; typical resonant heads are only 3 mils. thick and can easily deform.  In these cases simply reduce the size of the interval to perfect fourths or major thirds (1.33 or 1.26 respectively) or lower, to keep the resonant head from getting too high in lug pitch.</p>
+<h3>Recommendations</h3>
+<p>Suggested top and bottom (batter and resonant) head lug tuning frequencies for a typical 14" snare drum are listed below. Depending on the specific drum, and the thickness of the drum heads, the required frequencies may vary so try these as a starting point and adjust accordingly.</p>
+
+<div class="panel panel-default">
+<div class="panel-heading">Lug-Frequencies for a typical 14" Snare Drum.</div>
+<table class="table">
+<tr>
+<th>FUNDAMENTAL NOTE</th>
+<th>INTERVAL</th>
+<th>TOP LUG FREQUENCY</th>
+<th>SNARE LUG FREQUENCY</th>
+</tr>
+<tr>
+<th>3E</th>
+<th>Perfect Fifth</th>
+<th>229 Hz</th>
+<th>343 Hz</th>
+</tr>
+<tr>
+<th>3F</th>
+<th>Perfect Fifth</th>
+<th>240 Hz</th>
+<th>359 Hz</th>
+</tr>
+<tr>
+<th>3F#</th>
+<th>Perfect Fifth</th>
+<th>252 Hz</th>
+<th>378 Hz</th>
+</tr>
+<tr>
+<th>3G</th>
+<th>Perfect Fifth</th>
+<th>266 Hz</th>
+<th>398 Hz</th>
+</tr>
+<tr>
+<th>3G#</th>
+<th>Perfect Fourth</th>
+<th>299 Hz</th>
+<th>398 Hz</th>
+</tr>
+<tr>
+<th>3A</th>
+<th>Major Third</th>
+<th>318 Hz</th>
+<th>400 Hz</th>
+</tr>
+<tr>
+<th>3A#</th>
+<th> - </th>
+<th>356 Hz</th>
+<th>400 Hz</th>
+</tr>
+</table>
+</div>
+
+<h2>Bass Drum Tuning</h2>
+<p> A lot of factors go into tuning your bass drum such as, the type of heads, use of cut-outs or kick-ports in the resonant head and the type of damping, eg., a pillow in the drum etc. A good starting point is to tune the lug-frequency of the resonant head a perfect fifth (1.5 times) higher in frequency than the batter head. Some people prefer the opposite while others prefer the heads closer in lug-frequency; again, a matter of personal preference and some experimentation may pay off.</p>
+<div class="panel panel-default">
+<div class="panel-heading">Bass Drum Recommendations</div>
+<table class ="table">
+<tr>
+<th>DIAMETER</th>
+<th>FUNDAMENTAL NOTE</th>
+<th>BATTER LUG FREQUENCY</th>
+<th>RESONANT LUG FREQUENCY</th>
+</tr>
+<tr>
+<th>24"</th>
+<th>1C</th>
+<th>49 Hz</th>
+<th>74 Hz</th>
+</tr>
+<tr>
+<th>24"</th>
+<th>1C#</th>
+<th>52 Hz</th>
+<th>78 Hz</th>
+</tr>
+<tr>
+<th>22-24"</th>
+<th>1D</th>
+<th>55 Hz</th>
+<th>82 Hz</th>
+</tr>
+<tr>
+<th>22"</th>
+<th>1D#</th>
+<th>58 Hz</th>
+<th>87 Hz</th>
+</tr>
+<tr>
+<th>22"</th>
+<th>1E</th>
+<th>61 Hz</th>
+<th>91 Hz</th>
+</tr>
+<tr>
+<th>20"</th>
+<th>1F</th>
+<th>64 Hz</th>
+<th>96 Hz</th>
+</tr>
+<tr>
+<th>20"</th>
+<th>1F#</th>
+<th>68 Hz</th>
+<th>101 Hz</th>
+</tr>
+<tr>
+<th>18"</th>
+<th>1G</th>
+<th>71 Hz</th>
+<th>107 Hz</th>
+</tr>
+</table>
+</div>
+
+<h3>  <a href="tunebottuningguide.pdf">
+ Click here for PDF tuning guide including FULL APPENDIX </a>.</h3>
+
+
+
+
+  <!-- closing container and main content dont delete -->
+    </div>
+    </div>
+    <!-- /.footer -->
+    <div class="custom-footer">
+        <div class="container">
+
+
+
+          <div class="col-sm-3">
+          <h3>Social</h3>
+          <hr>
+          <a href= "https://www.facebook.com/pages/Overtone-Labs/233100610086495?sk=wall"><img src="img/facebook.png"/></a>
+          <a href= "https://twitter.com/tunebotdrum"><img src="img/twitter.png"/></a>
+          <a href= "https://www.youtube.com/user/Mremilioish"><img src="img/youtube.png"/></a>
+          <a href= "https://soundcloud.com/overtone-labs"><img src="img/soundcloud.png"/></a>
+
+          </div>
+          <div class="col-sm-3">
+          <h3>Contact</h3>
+          <hr>
+          <p>Overtone Labs</br>
+          60 Island St.</br>
+          Lawrence, MA 01810</br>
+          978.682.1257</p>
+          </div>
+          <div class="col-sm-3">
+          <h3>Tuning Resources</h3>
+          <hr>
+          <a href="artist-tuning.html">Tune-bot Artists</a></br>
+          <a href="video.html">Videos</a></br>
+          <a href="calculator.html">Tuning Calculator</a></br>
+          </div>
+          <div class="col-sm-3">
+          <h3>Tuning Info</h3>
+          <hr>
+          <a href="tuning-guide.html">Tuning Guide</a></br>
+          <a href="instruction.html">Quick Start Guide</a></br>
+          <a href="calculator.html">Tuning Calculator</a></br>
+          </div>
+
+
+        </div>
+        </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+  <script type= "text/javaScript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25419902-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</body>
+
+</html>

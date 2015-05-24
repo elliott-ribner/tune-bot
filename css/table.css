@@ -1,0 +1,9 @@
+tr {
+    display: none;
+}
+
+tr.header {
+    display: table-row;
+    font-weight: bold;
+    font-size: 150%;
+}

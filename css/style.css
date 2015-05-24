@@ -1,0 +1,215 @@
+
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+.online a {
+  font-size: 20px;
+}
+
+.hidden {
+  display:none;
+}
+.artist-table {
+  margin-top: 10px;
+}
+.btn {
+  padding-bottom: 10px;
+}
+.online a {
+  padding-right: 25px;
+}
+.artist-align {
+  padding-top: 20px;
+}
+.v-center {
+    display:table;
+    height:300px;
+}
+.content {
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+}
+
+.motto {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color:#333;
+}
+
+
+.artist-center {
+  display:center-block;
+}
+
+
+.outline img {
+	border: 2px solid;
+}
+/*added to make images responsive */
+.banner {
+	background-image:url('banner3.jpg');
+	max-height: 100%;
+	overflow: auto;
+	background-repeat: no-repeat;
+	background-color:#898f8b;
+	background-position: right bottom;
+
+}
+/*added to make images responsive */
+.resp img {
+          display: block;
+          height: auto;
+          max-width: 100%;
+   }
+/*added to make images responsive */
+
+.full-width {
+	width:100%;
+}
+
+}
+.custom-jumbo {
+	margin-top: 40px;
+}
+
+.custom-jumbo img {
+  margin-top: 40px;
+}
+.custom-footer {
+	background-color:#222;
+	width: 100%;
+	color: #999;
+  margin-bottom: 30px;
+}
+
+.custom-footer hr {
+  border-color: #999;
+}
+
+.main-margin {
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.custom-footer a{
+	color: #999;
+}
+
+.custom-footer h3{
+	color: #ff7F00;
+	font-size:16px;
+}
+
+.custom-footer span {
+	color:#999;
+}
+.main-content {
+	background-color:#F5F5F5;
+}
+
+H3 {
+	font-weight: normal;
+}
+
+.calculator p{
+  font-style: bold;
+  font-size: 16px;
+}
+
+.calculator button{
+  margin-bottom: 10px;
+}
+
+.lead {
+  padding: 10px;
+}
+.main-pic {
+	width: 100%;
+	background-color: #FF9640;
+	color:#FFF;
+}
+
+.border H3 {
+	text-align:center;
+}
+
+.padding {
+	padding-bottom:30px;
+	padding-top:30px;
+}
+
+.border {
+background-color:#FFF;
+border-width:0px;
+padding-bottom:20px;
+padding-top:20px;
+padding-left:20px;
+padding-right:20px;
+border-radius:7px;
+box-shadow: 2px 2px 2px #999;
+margin-top:30px;
+margin-bottom:30px;
+color:#444;
+}
+
+.border p {
+  font-size: 16px;
+}
+
+
+.border-white-black {
+background-color: rgba(255, 255, 255, 0.9);
+border-width:1px;
+padding-bottom:5px;
+padding-top:5px;
+padding-left:20px;
+padding-right:20px;
+margin: 40px 40px 40px 40px;
+border-radius:7px;
+color:#333;
+padding:35px;
+}
+
+
+
+.main-pic img {
+	padding-top: 15px;
+	padding-bottom:15px;
+
+}
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+
+/* Global Styles - everything below here came from template - avove contents are made by elliott*/
+
+html,
+body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color:#222;
+	padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+
+
+.error-404 {
+    font-size: 100px;
+}
+
+
+
+
+
